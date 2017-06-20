@@ -1,4 +1,4 @@
-function initMap(){
+function initMap() {
    	var map = new google.maps.Map(document.getElementById("map"), {
 		zoom: 5,
 		center: {lat: -9.1191427, lng: -77.0349046},
@@ -7,16 +7,16 @@ function initMap(){
 		streetViewControl: true,
 	});
 
-function buscar(){
-		if(navigator.geolocation){
-			navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
+function buscar() {
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(exito, error);
 		}
 	}
 
 	document.getElementById("findme").addEventListener("click", buscar);
 	var latitud, longitud;
 
-	var funcionExito = function(posicion){
+	var exito = function(posicion) {
 		latitud = posicion.coords.latitude;
 		longitud = posicion.coords.longitude;
 
@@ -33,7 +33,7 @@ function buscar(){
 		map.setCenter({lat:latitud, lng:longitud});
 	}
 
-	var funcionError = function(error){
+	var error = function(e) {
 		alert("Tenemos problemas para encontrar tu ubicación.");
 	}
 

@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* HEADER */
+
+.logo {
+	margin: 30px 0 10px 0;
+
+}
+
+.logo img {
+	width: 300px;
+}
+
+#line {
+	border: 0;
+	border-top: 1px dashed grey; 
+    height: 1px;
+	width: 100%;
+    padding: 0;	
+}
+
+#map {
+	width: 100%;
+	height: 100vh;
+	border: 2px solid black;
+}
+
+/* BOTONES E INPUT */
+
+.text-btn {
+	padding: 10px 0 10px 10px;
+}
+
+.text-btn .row {
+	margin-right: 0px;
+}
+
+.text-input {
+	padding-right: 0;
+}
+
+.text-input p {
+	text-align: left;
+	font-weight: 700;
+	margin-bottom: 0px;
+}
+
+button {
+	margin: 15px auto;
+	padding: 10px 15px;
+	color: white;
+	background-color: #faae27;
+	border: 0;
+	font-weight: 700;
+	border-radius: 1px;
+	font-family: "Raleway", sans-serif;
+	font-size: 15px;
+	display: block;
+}
+
+button:hover,
+button:focus {
+	outline: 0;
+}
+
+button:hover {
+	background-color: #D89428;	
+}
+
+/* FOOTER */
+
+footer {
+	margin-top: 30px;
+	background-color: #F79F11;
+}
+
+footer p {
+	color: white;
+	font-size: 12px;
+	padding: 10px 0 0 0;
+	text-align: right;
+}

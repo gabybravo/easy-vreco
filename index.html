@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GEOLOCALOZACIÓN EASY VRECO</title>
+	<script src="https://use.fontawesome.com/4154d90246.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12 text-center logo">
+				<img src="assets/img/Google_Maps_logo.png" alt="">
+				<hr>
+			</div>
+		</div>
+	</header>
+
+	<!-- BOTONES E INPUT -->
+	<section class="container text-btn">
+		<div class="row">
+			<div class="col-md-3 col-sm-12 col-xs-12 text-center margen">
+				<button id="encuentrame" class="btn-block">Encuéntrame</button>
+				<hr class="hidden-md hidden-lg col-sm-12 col-xs-12" id="line">
+			</div>
+			<div class="col-md-3 col-sm-12 col-xs-12 text-center margen">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12 text-input">
+						<p>Origen</p>
+						<input type="text" class="form-control input-block" id="origen" placeholder="Introduce una ubicación">
+					</div>
+				</div>				
+			</div>
+			<div class="col-md-3 col-sm-12 col-xs-12 text-center margen">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12 text-input">
+						<p>Destino</p>
+						<input type="text" class="form-control input-block" id="destino" placeholder="Introduce una ubicación">
+					</div>
+				</div>				
+			</div>			
+			<div class="col-md-3 col-sm-12 col-xs-12 text-center margen">
+				<button id="ruta" class="btn-block">Ruta</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- MAPA -->	
+	<section class="container">
+		<div class="row mapa">
+			<div class="col-md-12 col-sm-12 col-xs-12" id="map"></div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="row mapa">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<p><i class="fa fa-map-marker" aria-hidden="true"></i> MoogleMaps | Laboratoria 2017</p>
+				</div>
+			</div>	
+		</div>			
+	</footer>
+
+<script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD96EfGps4ayV2z_Ky4esiSPjD_eFt0PvE&callback=initMap&libraries=places"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
